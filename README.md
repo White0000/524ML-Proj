@@ -1,4 +1,4 @@
-### 524ML-Proj
+# 524ML-Proj
 # Diabetes Detection with Ensemble Voting
 
 This repository contains a comprehensive system for predicting diabetes risk based on clinical features and an ensemble voting strategy. It showcases the entire workflow from data preprocessing and model training (including multiple algorithms) to real-time training visualization and a user-facing web interface.
