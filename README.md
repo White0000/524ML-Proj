@@ -79,7 +79,7 @@ README.md                   # Project documentation (this file)
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/diabetes-ensemble.git
+   [git clone https://github.com/yourusername/diabetes-ensemble.git](https://github.com/White0000/524ML-Proj.git)
    cd diabetes-ensemble
    ```
 
