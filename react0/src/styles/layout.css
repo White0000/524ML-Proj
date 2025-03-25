@@ -1,0 +1,124 @@
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.layout-header {
+  height: 60px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.layout-header .header-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.layout-header .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.layout-header .header-nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.layout-header .header-nav a:hover {
+  color: #cce4ff;
+}
+
+.layout-body {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.layout-sidebar {
+  flex: 0 0 240px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  transition: width 0.3s;
+  overflow-y: auto;
+}
+
+.layout-sidebar .sidebar-menu {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.layout-sidebar .sidebar-menu .sidebar-item {
+  display: block;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.layout-sidebar .sidebar-menu .sidebar-item:hover {
+  background-color: #e2e6ea;
+}
+
+.layout-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f6f6f6;
+  min-height: 0;
+}
+
+.layout-footer {
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
+
+.layout-sidebar.collapsed {
+  width: 60px;
+}
+
+.layout-sidebar.collapsed .sidebar-item {
+  text-align: center;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .layout-header {
+    height: 50px;
+    padding: 0 0.5rem;
+  }
+  .layout-sidebar {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    width: 0;
+    border-right: none;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .layout-sidebar.open {
+    width: 200px;
+  }
+  .layout-content {
+    padding: 0.5rem;
+  }
+}
