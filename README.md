@@ -203,4 +203,4 @@ Then poll `/train-progress` to retrieve progress data for visualization.
 
 ## License
 
-[Your preferred license statement goes here, e.g. MIT License or proprietary notice.]
+MIT License
